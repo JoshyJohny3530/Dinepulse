@@ -1,12 +1,3 @@
-**DINEPULSE - CAPSTONE PROJECT**
-
-## Group members
-
-- Aimy Shaju : 8898297
-- Joshy Johny : 8857731
-- Nibin Moideenkutty : 8890966
-
----
 
 The primary objective of this capstone project is the design and development of a robust restaurant management system that includes both web and mobile applications. We'd like to make the system user-friendly with the use of modern technologies, including React, the .NET framework, and MS SQL, that would enhance the overall dining experience. Also, we will make use of Flutter to provide a fully responsive mobile application to complement the web-based solution.
 The scope of our project encompasses several key components essential for effective restaurant management:

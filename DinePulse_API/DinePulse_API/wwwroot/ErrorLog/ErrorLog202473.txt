@@ -1,0 +1,24 @@
+Time: 03-07-2024 04:19:52 PM
+-----------------------------------------------------------
+Message: Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=171; handshake=142; [Login] initialization=13; authentication=12; [Post-Login] complete=14015; 
+
+-----------------------------------------------------------
+
+Time: 03-07-2024 04:19:54 PM
+-----------------------------------------------------------
+Message: Error getting data...Object reference not set to an instance of an object.
+
+-----------------------------------------------------------
+
+Time: 03-07-2024 04:20:11 PM
+-----------------------------------------------------------
+Message: Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=72; handshake=82; [Login] initialization=0; authentication=0; [Post-Login] complete=14011; 
+
+-----------------------------------------------------------
+
+Time: 03-07-2024 04:23:54 PM
+-----------------------------------------------------------
+Message: Error getting data...Object reference not set to an instance of an object.
+
+-----------------------------------------------------------
+

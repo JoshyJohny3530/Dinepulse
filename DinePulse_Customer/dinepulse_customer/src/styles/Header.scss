@@ -1,0 +1,240 @@
+.header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #8B4513;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    box-sizing: border-box;
+    padding: 0 20px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            /*height: 50px;*/
+            width: clamp(4.0625rem, 3.587rem + 2.1739vw, 5.625rem);
+        }
+
+        span {
+            font-family: "Shojumaru", system-ui;
+            font-weight: 400;
+            font-size: clamp(1.25rem, 1.0598rem + 0.8696vw, 1.875rem);
+            color: #bb521f;
+            text-shadow: 1px 1px 2px #000;
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .nav {
+        ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: #bb521f;
+                    font-weight: bold;
+                    transition: color 0.3s;
+                    font-family: "Roboto Slab", serif;
+                    font-size: 16px;
+
+                    &:hover {
+                        color: #FF4500;
+                    }
+                }
+
+                button {
+                    border: 2px solid #ff914d;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: clamp(0.8125rem, 0.7364rem + 0.3478vw, 1.0625rem);
+                    color: #fff;
+                    background-image: linear-gradient(144deg, #ff3131, #ff914d);
+                    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+                    font-family: "Roboto Slab", serif;
+                    padding: 4px 10px;
+        
+                    &:hover {
+                        background-color: #e03d00;
+                    }
+                }
+
+                .profile_icon {
+                    vertical-align: middle;
+                    line-height: 1px;
+                    font-size: 40px;
+                    color: #bb521f;
+                    margin-right: 5px;
+                  }
+                  
+                  .icon_logout {
+                    vertical-align: middle;
+                    line-height: 1px;
+                    font-size: 24px;
+                    color: red;
+                    margin-right: 5px;
+                    cursor: pointer;
+                  }
+                  
+                  .profile_text {
+                    color: #bb521f;
+                    font-family: "Roboto Slab", serif;
+                    font-size: 15px;
+                    margin-right: 25px;
+                  }
+            }
+        }
+
+        &.nav-open {
+            display: none;
+        }
+    }
+
+    .mobile-menu-icon {
+        display: none;
+        font-size: clamp(1.125rem, 0.7952rem + 1.5075vw, 1.5rem);
+        cursor: pointer;
+        color: #8B4513;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0 clamp(0.625rem, 0.0754rem + 2.5126vw, 1.25rem);
+
+        .nav {
+            display: none;
+        }
+
+        .mobile-menu-icon {
+            display: contents;
+        }
+
+        .mobile-nav {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            border-top: 2px solid #8B4513;
+            z-index: 10;
+            transition: transform .8s ease-in-out;
+            transform: translateY(-100%);
+            overflow-y: auto;
+
+            &.mobile-nav-open {
+                transform: translateY(0);
+            }
+
+            .mobile-nav-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+                border-bottom: 2px solid #8B4513;
+
+                img {
+                    height: 50px;
+                }
+
+                span {
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    color: #8B4513;
+                    font-family: "Shojumaru", system-ui;
+                }
+
+                svg {
+                    font-size: 1.5em;
+                    cursor: pointer;
+                    color: #8B4513;
+                }
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    padding: 10px 0;
+                    text-align: center;
+
+                    a {
+                        font-family: "Roboto Slab", serif;
+                        text-decoration: none;
+                        color: #8B4513;
+                        font-weight: bold;
+                        display: block;
+
+                        &:hover {
+                            color: #FF4500;
+                        }
+                    }
+
+                    button {
+                        border: 2px solid #ff914d;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-size: clamp(0.8125rem, 0.7364rem + 0.3478vw, 1.0625rem);
+                        color: #fff;
+                        background-image: linear-gradient(144deg, #ff3131, #ff914d);
+                        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+                        font-family: "Roboto Slab", serif;
+                        padding: 4px 10px;
+            
+                        &:hover {
+                            background-color: #e03d00;
+                        }
+                    }
+                }
+            }
+        }
+
+        .overlay {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 5;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+
+            &.overlay-show {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

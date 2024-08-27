@@ -1,0 +1,121 @@
+.register-page {
+  display: flex;
+  background: url("../assets/plain_background.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Roboto Slab", serif;
+}
+.register-page .left-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.register-page .left-section img {
+  max-width: 100%;
+  height: auto;
+}
+.register-page .right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 20px;
+}
+.register-page .right-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #bb521f;
+}
+.register-page .right-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.register-page .right-section form .input-group {
+  margin-bottom: 15px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /*.icon-user,
+  .icon-email,
+  .icon-password,
+  .icon-phone {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #8B4513;
+  }*/
+}
+.register-page .right-section form .input-group input {
+  /*width: 100%;*/
+  width: 60%;
+  padding: 10px 15px;
+  font-size: 1em;
+  /*border: 1px solid #ccc;
+  border-radius: 5px;*/
+  border: 2px solid #bb521f;
+  border-radius: 8px;
+  color: #bb521f;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+.register-page .right-section form .input-group .icons {
+  margin-left: -30px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #bb521f;
+}
+.register-page .right-section form .btn-register {
+  /*width: 100%;*/
+  width: 40%;
+  padding: 10px;
+  background-color: #FF4500;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Roboto Slab", serif;
+}
+.register-page .right-section form .btn-register:hover {
+  background-color: #e03d00;
+}
+.register-page .right-section .login-link {
+  margin-top: 10px;
+  color: #8B4513;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+.register-page .right-section .login-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .register-page {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .register-page .left-section {
+    display: none;
+  }
+  .register-page .right-section {
+    flex: none;
+    padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .register-page .right-section h2 {
+    font-size: clamp(1.75rem, 1.5407rem + 0.9569vw, 2rem);
+  }
+  .register-page .right-section form .input-group input {
+    width: 100%;
+  }
+  .register-page .right-section form .btn-register {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Register.css.map */

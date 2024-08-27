@@ -1,0 +1,155 @@
+.register-page {
+    display: flex;
+    background: url('../assets/plain_background.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    // margin-top: 80px;
+    font-family: "Roboto Slab", serif;
+
+    .left-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .right-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        padding: 20px;
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #bb521f;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            .input-group {
+                // position: relative;
+                margin-bottom: 15px;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+
+
+                input {
+                    /*width: 100%;*/
+                    width: 60%;
+                    padding: 10px 15px;
+                    font-size: 1em;
+                    /*border: 1px solid #ccc;
+                    border-radius: 5px;*/
+                    border: 2px solid #bb521f;
+                    border-radius: 8px;
+                    color: #bb521f;
+                    box-sizing: border-box;
+                    font-family: "Roboto Slab", serif;
+                }
+
+                /*.icon-user,
+                .icon-email,
+                .icon-password,
+                .icon-phone {
+                    position: absolute;
+                    left: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #8B4513;
+                }*/
+                .icons {
+                    // position: absolute;
+                    // right: 170px;
+                    // top: 30%;
+                    margin-left: -30px;
+                    margin-top: 10px;
+                    font-size: 20px;
+                    // transform: translateX(-50%);
+                    color: #bb521f;
+                }
+            }
+
+            .btn-register {
+                /*width: 100%;*/
+                width: 40%;
+                padding: 10px;
+                background-color: #FF4500;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                font-size: 1em;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                font-family: "Roboto Slab", serif;
+
+                &:hover {
+                    background-color: #e03d00;
+                }
+            }
+        }
+
+        .login-link {
+            margin-top: 10px;
+            color: #8B4513;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .register-page {
+        flex-direction: column;
+        justify-content: center;
+
+        .left-section {
+            display: none;
+        }
+
+        .right-section {
+            flex: none;
+            padding: 20px;
+        }
+    }
+
+}
+
+@media (max-width: 480px) {
+    .register-page {
+        .right-section {
+            h2 {
+                font-size: clamp(1.75rem, 1.5407rem + 0.9569vw, 2rem);
+            }
+
+            form {
+                .input-group {
+                    input {
+                        width: 100%;
+                    }
+                }
+
+                .btn-register {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

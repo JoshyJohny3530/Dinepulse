@@ -1,0 +1,244 @@
+.reserve {
+    font-family: "Roboto Slab", serif;
+    background: url('../assets/plain_background.png') repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+
+    .add {
+        width: 100%;
+
+        .reservetoday {
+            .reserve-col {
+                margin-top: 60px;
+
+                .booktable_header {
+                    color: #bb521f;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+
+                    h3 {
+                        font-size: 25px;
+                    }
+
+                    .booktable_icon {
+                        color: #bb521f;
+                        font-size: 1.5em;
+                    }
+                }
+
+                .booktable_subheader {
+                    color: #bb521f;
+
+                    p {
+                        font-size: 17px;
+                        text-align: center;
+                        margin: 0;
+                    }
+                }
+
+                .reservation-form-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                    padding: 20px 0;
+                    box-sizing: border-box;
+
+                    .reservation-form {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        gap: 15px;
+
+                        .left-side {
+                            margin-right: 5px;
+                            width: 50%;
+
+                            label {
+                                display: flex;
+                                flex-direction: column;
+                                margin-bottom: 15px;
+                                color: #bb521f;
+                                text-align: left;
+                            }
+
+                            input {
+                                padding: 8px;
+                                margin-top: 5px;
+                                border: 2px solid #bb521f;
+                                border-radius: 8px;
+                                font-size: clamp(0.8125rem, 0.7243rem + 0.2941vw, 1rem);
+                                font-family: "Roboto Slab", serif;
+                                color: #4d4c4c;
+                                height: 20px;
+                            }
+
+                            input::placeholder {
+                                color: #737373;
+                            }
+
+                        }
+
+                        .right-side {
+                            width: 50%;
+
+                            label {
+                                display: flex;
+                                flex-direction: column;
+                                margin-bottom: 15px;
+                                color: #bb521f;
+                                text-align: left;
+
+                                textarea {
+                                    padding: 8px;
+                                    margin-top: 5px;
+                                    border: 2px solid #bb521f;
+                                    border-radius: 8px;
+                                    font-size: clamp(0.8125rem, 0.7243rem + 0.2941vw, 1rem);
+                                    color: #bb521f;
+                                    height: 250px;
+                                    font-family: "Roboto Slab", serif;
+                                }
+
+                                textarea::placeholder {
+                                    color: #737373;
+                                }
+                            }
+
+                            .reservation-buttons {
+                                display: flex;
+                                gap: 10px;
+
+                                .add-btn {
+                                    width: 50%;
+                                    padding: 5px;
+                                    cursor: pointer;
+                                    font-family: "Roboto Slab", serif;
+                                    font-size: 15px;
+                                    color: #fff;
+                                    text-align: center;
+                                    border: 2px solid #ff914d;
+                                    border-radius: 10px;
+                                    background-image: linear-gradient(144deg, #ff3131, #ff914d);
+                                    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+                                }
+
+                                .cancel-btn {
+                                    width: 50%;
+                                    padding: 5px;
+                                    cursor: pointer;
+                                    font-family: "Roboto Slab", serif;
+                                    font-size: 15px;
+                                    color: #fff;
+                                    text-align: center;
+                                    border: 2px solid #ff914d;
+                                    border-radius: 10px;
+                                    background-image: linear-gradient(144deg, #ff3131, #ff914d);
+                                    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.error {
+    width: 310px;
+    color: red;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .reserve {
+        .add {
+            .reservetoday {
+                .reserve-col {
+                    .reservation-form-container {
+                        .reservation-form {
+                            .right-side {
+                                .reservation-buttons {
+                                    flex-direction: column;
+
+                                    .add-btn,
+                                    .cancel-btn {
+                                        width: 100%;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .reserve {
+        height: 100%;
+
+        .add {
+            .reservetoday {
+                .reserve-col {
+                    margin-top: 70px;
+
+                    .booktable_header {
+                        gap: 10px;
+
+                        .booktable_icon {
+                            font-size: clamp(1.25rem, 0.5769rem + 3.0769vw, 1.5rem);
+                        }
+
+                        h3 {
+                            font-size: clamp(1.25rem, 0.5769rem + 3.0769vw, 1.5rem);
+                            margin: 15px 0;
+                        }
+                    }
+
+                    .booktable_subheader {
+
+                        p {
+                            font-size: clamp(0.875rem, 0.3702rem + 2.3077vw, 1.0625rem);
+                        }
+                    }
+
+                    .reservation-form-container {
+                        .reservation-form {
+                            flex-direction: column;
+                            gap: 0;
+
+                            .left-side {
+                                width: 100%;
+
+                                label {
+                                    margin-bottom: 10px;
+                                }
+                            }
+
+                            .right-side {
+                                width: 100%;
+
+                                label {
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+Time: 23-07-2024 12:17:39 PM
+-----------------------------------------------------------
+Message:  Commit Exception Type: System.Data.SqlClient.SqlException
+
+-----------------------------------------------------------
+
+Time: 23-07-2024 12:22:57 PM
+-----------------------------------------------------------
+Message: Error retrieving menu categories: Value cannot be null. (Parameter 'inArray')
+
+-----------------------------------------------------------
+
+Time: 23-07-2024 12:23:24 PM
+-----------------------------------------------------------
+Message: Error retrieving menu categories: Value cannot be null. (Parameter 'inArray')
+
+-----------------------------------------------------------
+
+Time: 23-07-2024 12:23:34 PM
+-----------------------------------------------------------
+Message: Error retrieving menu categories: Value cannot be null. (Parameter 'inArray')
+
+-----------------------------------------------------------
+
+Time: 23-07-2024 12:23:34 PM
+-----------------------------------------------------------
+Message: Error retrieving menu categories: Value cannot be null. (Parameter 'inArray')
+
+-----------------------------------------------------------
+
+Time: 23-07-2024 12:24:07 PM
+-----------------------------------------------------------
+Message: Error retrieving menu categories: Value cannot be null. (Parameter 'inArray')
+
+-----------------------------------------------------------
+
+Time: 23-07-2024 12:24:07 PM
+-----------------------------------------------------------
+Message: Error retrieving menu categories: Value cannot be null. (Parameter 'inArray')
+
+-----------------------------------------------------------
+
+Time: 23-07-2024 12:24:43 PM
+-----------------------------------------------------------
+Message: Error retrieving menu categories: Value cannot be null. (Parameter 'inArray')
+
+-----------------------------------------------------------
+
+Time: 23-07-2024 12:26:20 PM
+-----------------------------------------------------------
+Message: Error retrieving menu categories: Value cannot be null. (Parameter 'inArray')
+
+-----------------------------------------------------------
+

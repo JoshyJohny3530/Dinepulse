@@ -1,0 +1,72 @@
+Time: 09-08-2024 11:40:06 AM
+-----------------------------------------------------------
+Message: Error validating user: Column 'customer_phone' does not belong to table .
+
+-----------------------------------------------------------
+
+Time: 09-08-2024 11:40:10 AM
+-----------------------------------------------------------
+Message: Error validating user: Column 'customer_phone' does not belong to table .
+
+-----------------------------------------------------------
+
+Time: 09-08-2024 11:40:14 AM
+-----------------------------------------------------------
+Message: Error validating user: Column 'customer_phone' does not belong to table .
+
+-----------------------------------------------------------
+
+Time: 09-08-2024 11:40:15 AM
+-----------------------------------------------------------
+Message: Error validating user: Column 'customer_phone' does not belong to table .
+
+-----------------------------------------------------------
+
+Time: 09-08-2024 11:40:16 AM
+-----------------------------------------------------------
+Message: Error validating user: Column 'customer_phone' does not belong to table .
+
+-----------------------------------------------------------
+
+Time: 09-08-2024 11:40:19 AM
+-----------------------------------------------------------
+Message: Error validating user: Column 'customer_phone' does not belong to table .
+
+-----------------------------------------------------------
+
+Time: 09-08-2024 11:41:01 AM
+-----------------------------------------------------------
+Message: Error validating user: Column 'customer_phone' does not belong to table .
+
+-----------------------------------------------------------
+
+Time: 09-08-2024 11:42:26 AM
+-----------------------------------------------------------
+Message: Error validating user: Column 'customer_phone' does not belong to table .
+
+-----------------------------------------------------------
+
+Time: 09-08-2024 04:46:55 PM
+-----------------------------------------------------------
+Message: Commit Exception Type: System.Data.SqlClient.SqlException
+
+-----------------------------------------------------------
+
+Time: 09-08-2024 04:48:11 PM
+-----------------------------------------------------------
+Message: Commit Exception Type: System.Data.SqlClient.SqlException
+
+-----------------------------------------------------------
+
+Time: 09-08-2024 05:07:03 PM
+-----------------------------------------------------------
+Message: Commit Exception Type: System.Data.SqlClient.SqlException
+
+-----------------------------------------------------------
+
+Time: 09-08-2024 05:10:41 PM
+-----------------------------------------------------------
+Message: Commit Exception Type: System.Data.SqlClient.SqlException
+
+-----------------------------------------------------------
+

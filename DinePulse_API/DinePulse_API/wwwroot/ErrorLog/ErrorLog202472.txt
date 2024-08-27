@@ -1,0 +1,12 @@
+Time: 02-07-2024 12:55:53 AM
+-----------------------------------------------------------
+Message: The ConnectionString property has not been initialized.
+
+-----------------------------------------------------------
+
+Time: 02-07-2024 12:55:55 AM
+-----------------------------------------------------------
+Message: Error getting data...Object reference not set to an instance of an object.
+
+-----------------------------------------------------------
+

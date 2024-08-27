@@ -1,0 +1,183 @@
+.home {
+  background: url("../assets/customer-home-background.png") no-repeat center center;
+  background-size: cover;
+  color: #bb521f;
+  font-family: "Roboto Slab", serif;
+  text-align: justify;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .intro-section {
+  background-color: rgba(252, 247, 244, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  width: 65%;
+}
+.home .intro-section .intro-text h1 {
+  font-size: clamp(1.375rem, 1.1848rem + 0.8696vw, 2rem);
+  text-align: left;
+}
+.home .intro-section .intro-text p {
+  font-size: clamp(0.75rem, 0.6739rem + 0.3478vw, 1rem);
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.home .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.home .buttons button {
+  border: 2px solid #ff914d;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: clamp(0.8125rem, 0.7364rem + 0.3478vw, 1.0625rem);
+  color: #fff;
+  background-image: linear-gradient(144deg, #ff3131, #ff914d);
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  font-family: "Roboto Slab", serif;
+  padding: 4px 10px;
+}
+.home .buttons button:hover {
+  background-color: #e03d00;
+}
+.home .promotional-dishes {
+  background-color: orange;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 30px;
+  width: 65%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.home .promotional-dishes h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0;
+}
+.home .promotional-dishes .promotional-dishes-subheading {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.home .promotional-dishes .slider {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.home .promotional-dishes .slider .slider-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  gap: 15px;
+}
+.home .promotional-dishes .slider .promotional-dish {
+  flex: 0 0 40%;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: transform 0.5s;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.home .promotional-dishes .slider .promotional-dish img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 180px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(153, 177, 59, 0.24) 0 2px 2px, rgba(234, 245, 11, 0.4) 0 8px 12px;
+}
+.home .promotional-dishes .slider .promotional-dish h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+.home .promotional-dishes .slider .promotional-dish p {
+  color: #555;
+  font-size: 1rem;
+  margin: 10px;
+  text-align: center;
+}
+.home .promotional-dishes .slider .promotion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  width: 7.5rem;
+  height: 2.25rem;
+  background: #ff3131;
+  border-radius: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transform: rotate(15deg);
+  transition: transform 0.25s;
+}
+.home .promotional-dishes .slider .promotion span {
+  color: white;
+}
+.home .promotional-dishes .slider:hover .promotion {
+  transform: rotate(0deg);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@media (max-width: 768px) {
+  .home {
+    background: url("../assets/plain_background.png") repeat center center;
+    padding: 20px;
+    margin-top: 65px;
+    display: block;
+  }
+  .home .intro-section {
+    width: 100%;
+    background: none;
+    padding: 0;
+  }
+  .home .intro-section .intro-text h1 {
+    text-align: center;
+  }
+  .home .promotional-dishes {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .home .promotional-container {
+    justify-content: center;
+  }
+  .home .promotional-dish {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+@media (max-width: 480px) {
+  .home {
+    margin-top: 45px;
+    height: 100%;
+  }
+  .home .intro-section {
+    width: 100%;
+  }
+  .home .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .home .promotional-dishes {
+    width: 100%;
+    padding: 10px;
+  }
+  .home .slider .promotional-dish {
+    flex: 0 0 100%;
+  }
+}/*# sourceMappingURL=Home.css.map */

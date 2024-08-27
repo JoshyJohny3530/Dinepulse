@@ -1,0 +1,104 @@
+.gallery_outer {
+    margin-top: 85px;
+    padding: 0 20px;
+    font-family: "Roboto Slab", serif;
+    background: url('../assets/plain_background.png') no-repeat center center;
+    background-size: cover;
+
+    .gallery-specials {
+        padding-top: 20px;
+        margin-left: 0;
+
+        h1 {
+            text-align: center;
+            font-size: clamp(1.5rem, 1.3478rem + 0.6957vw, 2rem);
+            color: #bb521f;
+            margin: 0 auto;
+        }
+
+        .gallery-specials-subheading {
+            margin: 0 auto;
+            padding: 10px 0;
+            text-align: justify;
+            line-height: 1.5;
+            font-size: clamp(1rem, 0.9239rem + 0.3478vw, 1.25rem);
+            color: #ff742b;
+            text-shadow: 2px 2px 5px orange;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+
+            .gallery {
+                text-align: center;
+                width: calc(25% - 20px);
+
+                img {
+                    width: 100%;
+                    border: 1px solid #eee;
+                    border-radius: 20px 60px 20px 60px;
+                    min-height: clamp(12.5rem, 3.9754rem + 17.7596vw, 20.625rem);
+                    object-fit: cover;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .gallery_outer {
+        .gallery-specials {
+            .gallery-specials-subheading {}
+
+            .gallery-container {
+                .gallery {
+                    width: calc(33.33% - 20px);
+                }
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery_outer {
+        .gallery-specials {
+            .gallery-specials-subheading {}
+
+            .gallery-container {
+                .gallery {
+                    width: calc(50% - 20px);
+
+                }
+
+            }
+
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery_outer {
+        .gallery-specials {
+            .gallery-specials-subheading {}
+
+            .gallery-container {
+                .gallery {
+                    width: 100%;
+
+                }
+
+            }
+
+        }
+    }
+}

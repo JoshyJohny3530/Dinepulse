@@ -1,0 +1,296 @@
+.aboutus {
+    background: url('../assets/plain_background.png') repeat center center;
+    background-size: cover;
+    font-family: "Roboto Slab", serif;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    .container-outer {
+        gap: 5px;
+        padding: 0px;
+        display: flex;
+        margin-top: 80px;
+
+        .sidebar {
+            padding: 10px;
+            width: 30%;
+
+            h2 {
+                text-align: center;
+                color: #bb521f;
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                text-align: center;
+                color: #9f3d09;
+                text-shadow: 2px 2px 5px rgb(233, 184, 162);
+                font-size: 20px;
+                margin: 15px 0;
+            }
+
+            .aside_stores {
+                .store_card {
+                    box-shadow: 0 4px 8px 0 #9f3d09;
+                    border-top-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    background-color: white;
+                    margin: auto;
+                    text-align: center;
+                    padding: 10px;
+                    margin-bottom: 15px;
+
+                    p {
+                        color: #bb521f;
+                        font-size: 16px;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+
+        .main-content {
+            padding: 10px;
+            width: 60%;
+
+            .about-section {
+                text-align: justify;
+                color: #bb521f;
+                line-height: 29px;
+                font-size: 18px;
+                font-family: "Roboto Slab", serif;
+
+                p {
+                    padding-top: 15px;
+                    margin: 0;
+                    text-align: justify;
+                }
+
+                h2 {
+                    text-align: center;
+                    color: #bb521f;
+                    font-size: 30px;
+                }
+
+                li {
+                    margin-left: 50px;
+                    font-style: italic;
+                    font-size: 16px;
+                }
+            }
+
+        }
+
+        .teamInfo {
+            width: 30%;
+
+            h2 {
+                text-align: center;
+                color: #bb521f;
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+
+            .teamsDetails {
+                width: 100%;
+                margin-bottom: 16px;
+                padding: 0 8px;
+
+                .team_card {
+                    box-shadow: 0 4px 8px 0 #9f3d09;
+                    border-top-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    margin: auto;
+                    text-align: center;
+                    background-color: white;
+                    padding: 10px;
+                    margin-bottom: 15px;
+
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        margin-top: 8px;
+                    }
+
+                    .personalInfo {
+                        h4 {
+                            color: #bb521f;
+                            font-size: 18px;
+                            margin: 10px 0;
+                        }
+
+                        p {
+                            color: #bb521f;
+                            margin: 10px 0;
+                            font-size: 16px;
+                        }
+
+                        .contact-button {
+                            font-size: 14px;
+                            margin-top: 0px;
+                            box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px, rgba(179, 132, 201, 0.4) 0 8px 12px;
+                            background-image: linear-gradient(135deg, #ff3131 40%, #ff914d);
+                            padding: 6px 12px;
+                            border: none;
+                            color: #ffffff;
+                            border-top-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            border: 1px solid transparent;
+                            font-family: "Roboto Slab", serif;
+
+                            &:hover {
+                                color: #333;
+                                border: 1px #ea6d27 solid;
+                                background-color: #ffffff;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1200px) {
+    .aboutus {
+        .container-outer {
+            gap: 5px;
+            flex-direction: column;
+
+            .sidebar {
+                padding: 10px;
+                width: auto;
+                order: 3;
+
+                h2 {
+                    font-size: clamp(1.75rem, 1.6185rem + 0.2736vw, 1.875rem);
+                }
+
+                h3 {
+                    font-size: clamp(1.125rem, 0.9935rem + 0.2736vw, 1.25rem);
+                }
+
+                .aside_stores {
+                    .store_card_outer {
+                        display: flex;
+                        gap: 16px;
+                        width: 100%;
+
+                        .store_card {
+                            width: 100%;
+
+                            p {
+                                font-size: clamp(0.875rem, 0.7435rem + 0.2736vw, 1rem);
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .main-content {
+                width: auto;
+                order: 1;
+
+                .about-section {
+                    p {
+                        font-size: clamp(1.0625rem, 0.9968rem + 0.1368vw, 1.125rem);
+                    }
+                }
+            }
+
+            .teamInfo {
+                width: auto;
+                order: 2;
+
+                h2 {
+                    font-size: clamp(1.75rem, 1.6185rem + 0.2736vw, 1.875rem);
+                }
+
+                .teamsDetails_outer {
+                    display: flex;
+
+                    .teamsDetails {
+                        display: flex;
+
+                        .team_card {
+                            width: 100%;
+
+                            .personalInfo {
+                                h4 {
+                                    font-size: clamp(1rem, 0.8685rem + 0.2736vw, 1.125rem);
+                                }
+
+                                p {
+                                    font-size: clamp(0.875rem, 0.7435rem + 0.2736vw, 1rem);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutus {
+        .container-outer {
+            .sidebar {
+
+                .aside_stores {
+                    .store_card_outer {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        width: auto;
+
+                        .store_card {
+                            width: fill-available;
+
+                        }
+                    }
+                }
+            }
+
+
+            .teamInfo {
+                .teamsDetails_outer {
+                    display: flex;
+                    flex-direction: column;
+
+                    .teamsDetails {
+                        display: flex;
+                        width: fill-available;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutus {
+        .container-outer {
+            margin-top: 65px;
+            gap: 0;
+
+            .main-content {
+                .about-section {
+                    h2 {
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

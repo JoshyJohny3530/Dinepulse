@@ -1,0 +1,12 @@
+Time: 25-07-2024 05:04:40 AM
+-----------------------------------------------------------
+Message:  Commit Exception Type: System.Data.SqlClient.SqlException
+
+-----------------------------------------------------------
+
+Time: 25-07-2024 05:19:10 AM
+-----------------------------------------------------------
+Message: Violation of UNIQUE KEY constraint 'UQ_CustomerEmail'. Cannot insert duplicate key in object 'dbo.tbl_customer'. The duplicate key value is (nibinm@gmail.com).
+
+-----------------------------------------------------------
+
